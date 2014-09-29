@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>	
+ 		<property name="connection.datasource">due</property>
+ 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+		<property name="hibernate.current_session_context_class">jta</property>
+		<property name="hibernate.transaction.manager_lookup_class">com.atomikos.icatch.jta.hibernate3.TransactionManagerLookup</property>
+  		<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JTATransactionFactory</property>
+		<mapping class="bmt.atomikos.hibernate.Canale" />
+	</session-factory>
+</hibernate-configuration>
