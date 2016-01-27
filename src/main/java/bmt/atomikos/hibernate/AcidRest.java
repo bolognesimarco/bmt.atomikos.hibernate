@@ -8,6 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class AcidRest {
 	//develop
+	//feature1
 	@Id
 	@GeneratedValue
 	private int id;
